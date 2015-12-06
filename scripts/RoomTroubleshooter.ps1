@@ -1,3 +1,4 @@
+
 <#
 Script Name:    RoomTroubleshooter.ps1
 Author:         Cory Knox
@@ -9,7 +10,7 @@ Requirements:   ShowUI (cloned from: https://github.com/show-ui/ShowUI)
                 PowerShell 3 (I think, only tested on PowerShell 5 Windows 7/10)
                 Elevation *not* required
                 User running script must have permissions to access XPANEL locations
-				TightVNC to be installed.
+				TightVNC must be installed.
 ToDo:            
 #>
 Import-Module ShowUI
@@ -36,4 +37,4 @@ New-Grid -Columns 4 -Children {
 	New-Button -Content "Launch XPANEL" -On_Click {
 		write-host $RoomNumber
 	} -Column 3
-} -show
+}  -AsJob

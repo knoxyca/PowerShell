@@ -34,4 +34,4 @@ New-Grid -Columns auto,* -Rows 4 -Children {
   $pwdLastSet.text = $pwdSet
   $pwdExpires.text = $pwdExp
  }
-} -Show -On_Loaded { $username.Focus() }
+} -On_Loaded { $username.Focus() } -AsJob
