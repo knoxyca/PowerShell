@@ -1,0 +1,3 @@
+Name,Location,Description,Type
+Close File,\\server\share\file.cmd,This file will close a network based resource.,cmd
+Fix Location Printers,\\server\share\file.ps1,This will do something,ps1
